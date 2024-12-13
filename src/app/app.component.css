@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+.content__container {
+  padding: 39px 150px 94px 150px;
+}
+
+.content-box {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+.content__main {
+  /* width: fit-content; */
+  flex-grow: 1;
+}
+
+.content__main--title {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+.content__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+
+
+.content__film {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.content__film--img {
+  width: calc((100% - 28px) / 2);
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.content__film--info {
+  width: calc((100% - 28px) / 2);
+  display: flex;
+  flex-direction: column;
+
+  p {
+    color: rgb(134, 134, 134);
+    margin-bottom: 2px;
+  }
+
+  .rating {
+    color: rgb(4, 163, 30);
+    font-weight: 700;
+  }
+}
+
+.film-info__content {
+  margin-bottom: 30px;
+}
+
+.film-info__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 3px;
+
+  span {
+    font-weight: 400;
+  }
+}
+
+.film-info__text {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.film-info__controlls {
+  margin-top: auto;
+
+  button {
+    color: rgb(255, 255, 255);
+    background: rgb(255, 73, 73);
+    padding: 16px 98px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 991px) {
+  .content__container {
+    padding: 26px 90px 15px 90px;
+  }
+
+  .content__film {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content__film--img {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .content__film--info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .content__container {
+    padding: 39px 28px 94px;
+  }
+
+  .content-box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+.content__cards {
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .content__sidebar {
+    width: 100%;
+  }
+}
+
+
