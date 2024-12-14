@@ -1,23 +1,5 @@
 <app-header></app-header>
 <main>
   <app-search></app-search>
-  <section class="content">
-    <div class="content__container">
-      <div class="content-box">
-        <div class="content__main">
-          <h2 class="content__main--title">Результаты поиска</h2>
-          <div class="content__cards">
-            <app-card title="The Martian 1"></app-card>
-            <app-card title="The Martian 2"></app-card>
-            <app-card title="The Martian 3"></app-card>
-            <app-card title="The Martian 4"></app-card>
-            <app-card title="The Martian 5"></app-card>
-            <app-card title="The Martian 6"></app-card>
-          </div>
-        </div>
-
-        <app-sidebar></app-sidebar>
-      </div>
-    </div>
-  </section>
+  <router-outlet></router-outlet>
 </main>

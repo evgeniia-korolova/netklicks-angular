@@ -72,4 +72,10 @@
   }
 }
 
+@media (max-width: 480px) {
+  .content__sidebar {
+    width: 100%;
+  }
+}
+
 

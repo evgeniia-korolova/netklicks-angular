@@ -1,0 +1,39 @@
+<section class="content">
+  <div class="container content__container">
+    <div class="content-box">
+      <div class="content__film">
+        @if(film) {
+        <div class="content__film--img">
+          <img [src]="film.image" [alt]="film.title" />
+        </div>
+        <div class="content__film--info">
+          <div class="film-info__content">
+            <h1 class="film-info__title">
+              {{film.title}},
+              <span> {{film.original}}</span>
+            </h1>
+            <p>{{film.category}}</p>
+            <p class="rating">{{film.rating}}</p>
+          </div>
+          <div class="film-info__text">
+            @if(film.description && film.description.length) {
+
+              <p>
+                {{film.description[0]}}
+              </p>
+              <p>
+                {{film.description[1]}}
+              </p>
+            }
+          </div>
+          <div class="film-info__controlls">
+            <button>Смотреть</button>
+          </div>
+        </div>
+        }
+      </div>
+
+      <app-sidebar></app-sidebar>
+    </div>
+  </div>
+</section>

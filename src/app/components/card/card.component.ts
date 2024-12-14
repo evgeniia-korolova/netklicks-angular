@@ -1,3 +1,4 @@
+import { Film } from './../../models/film.model';
 import { Component, Input } from '@angular/core';
 
 type TitleType = string | number;
@@ -13,5 +14,5 @@ interface TitleInterface {
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-  @Input() title: TitleType = '';
+  @Input() film! : Film;
 }

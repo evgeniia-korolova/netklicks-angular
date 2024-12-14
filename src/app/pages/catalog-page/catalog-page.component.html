@@ -1,0 +1,24 @@
+<section class="content">
+    <div class="content__container">
+      <div class="content-box">
+        <div class="content__main">
+          <h2 class="content__main--title">Результаты поиска</h2>
+          <div class="content__cards">
+
+            @for (film of films; track film.id) {
+
+              <app-card
+              [film]="film"
+              >
+
+              <!-- *ngFor="let film of films" [title]="film.title" -->
+              </app-card>
+            }
+
+          </div>
+        </div>
+
+        <app-sidebar></app-sidebar>
+      </div>
+    </div>
+  </section>
